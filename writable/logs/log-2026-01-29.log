@@ -1,0 +1,798 @@
+CRITICAL - 2026-01-29 13:30:40 --> Error: Call to undefined method CodeIgniter\HTTP\SiteURI::getSegement()
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\navigate.php on line 18.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Dashboard.php(10): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:27:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:27:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:28:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:28:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:29:34 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:29:35 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:29:55 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:29:55 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:30:03 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:30:03 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:30:39 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:30:39 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:32:42 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 15:32:42 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:27:57 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:27:58 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:29:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:29:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:30:58 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:30:58 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:31:44 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:31:45 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:32:45 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:32:45 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:34:44 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:34:44 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:36:47 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:36:47 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:37:48 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:37:48 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:39:01 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:39:02 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:39:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:39:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:40:23 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:40:24 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:40:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:40:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:41:14 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:41:14 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:43:42 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:43:42 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:50:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:50:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:52:14 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:52:15 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:52:36 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:52:36 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:57:04 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:57:04 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:57:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 16:57:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:01:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:01:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:02:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:02:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:02:44 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:02:44 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:03:03 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:03:04 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:03:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:03:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:06:34 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:06:34 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:08:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:08:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:09:10 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:09:10 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:09:38 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 17:09:38 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-01-29 23:59:03 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: admin/save_logo]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH\Controllers\Save_logo.php(9): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Save_logo->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
