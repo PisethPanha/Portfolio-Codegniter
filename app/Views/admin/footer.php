@@ -4,9 +4,9 @@
 <!--/$-->
 <!--$-->
 <!--/$-->
-<script id="_R_">
+<!-- <script id="_R_">
     self.__next_r = "HHFb8nj7g9mOuo46uTTUs"
-</script>
+</script> -->
 
 <script>
     let colorInput = document.querySelector("#lg_color")
@@ -29,44 +29,22 @@
     let shortBioPre = document.querySelector("#shortBioPre")
     let imageInput = document.querySelector("#imageInput")
     let imagePreview = document.querySelector("#imagePreview")
+    let selectedFont = document.querySelector("#selectedFont")
+    let fontWeightInput = document.querySelector("#fontWeightInput")
 
-    shortBio.addEventListener("input", () => {
-        shortBioPre.innerHTML = shortBio.value
-    })
-    
-    imageInput.addEventListener("change", () => {
-        const file = imageInput.files[0]
+  
 
-        if(file){
-            imagePreview.src = URL.createObjectURL(file)
-        }
-    })
+   try {
 
-    jobTitle.addEventListener("input", () => {
-        jobTitlePre.innerHTML = jobTitle.value
+    colorInput.addEventListener("input", () => {
+        colorBox.value = colorInput.value
+        lg_color_code_preview.innerHTML = colorInput.value
+        shortNameBgPreview.style.backgroundColor = colorInput.value
+        shortNameBgPreviewBttom.style.backgroundColor = colorInput.value
+        // console.log(colorInput.value)
     })
 
-    fullName.addEventListener("input", () => {
-        fullNamePre.innerHTML = fullName.value
-    })
-
-    ftBtns.forEach((ele) => {
-        ele.addEventListener("click", () => {
-            // Reset all buttons (optional)
-            ftBtns.forEach(btn => {
-                btn.style.backgroundColor = "";
-                btn.style.color = "#0b0b0b"
-            })
-
-            // Set clicked button color
-            ele.style.backgroundColor = "#1c69e3"
-            ele.style.color = "#f8f8f8"
-            fontWeight.innerHTML = ele.value
-            longNamePreview.style.fontWeight = ele.value == "Regular" ? "400" : ele.value == "Medium" ? "600" : ele.value == "Semibold" ? "700" : ele.value == "Bold" ? "900" : "400"
-        })
-    })
-
-    fontSelect.addEventListener("change", () => {
+     fontSelect.addEventListener("change", () => {
         let font = fontSelect.value
 
         // Map select values to actual CSS font-family strings
@@ -83,26 +61,68 @@
         }
 
         longNamePreview.style.fontFamily = fontMap[font] || "sans-serif"
+
+        selectedFont.innerHTML = fontMap[font]
     })
 
-    longName.addEventListener("input", () => {
+    ftBtns.forEach((ele) => {
+       try {
+         ele.addEventListener("click", () => {
+            // Reset all buttons (optional)
+            ftBtns.forEach(btn => {
+                btn.style.backgroundColor = "";
+                btn.style.color = "#0b0b0b"
+            })
+
+            // Set clicked button color
+            ele.style.backgroundColor = "#1c69e3"
+            ele.style.color = "#f8f8f8"
+            fontWeight.innerHTML = ele.value
+            fontWeightInput.value = ele.value
+            longNamePreview.style.fontWeight = ele.value == "Regular" ? "400" : ele.value == "Medium" ? "600" : ele.value == "Semibold" ? "700" : ele.value == "Bold" ? "900" : "400"
+        })
+       } catch (error) {
+        console.log(error);
+        
+       }
+    })
+
+     longName.addEventListener("input", () => {
         longNamePreview.innerHTML = longName.value
+        
+        
     })
 
     shortName.addEventListener("input", () => {
-        shortNamePreview.innerHTML = shortName.value
+        shortNameBgPreview.innerHTML = shortName.value
     })
 
-    colorInput.addEventListener("input", () => {
-        colorBox.value = colorInput.value
-        lg_color_code_preview.innerHTML = colorInput.value
-        shortNameBgPreview.style.backgroundColor = colorInput.value
-        shortNameBgPreviewBttom.style.backgroundColor = colorInput.value
-        // console.log(colorInput.value)
+    shortBio.addEventListener("input", () => {
+        shortBioPre.innerHTML = shortBio.value
+    })
+   } catch (error) {
+    console.log(error);
+    
+   }
+</script>
+<script>
+    jobTitle.addEventListener("input", () => {
+        jobTitlePre.innerHTML = jobTitle.value
+    })
+
+    fullName.addEventListener("input", () => {
+        fullNamePre.innerHTML = fullName.value
+    })
+    imageInput.addEventListener("change", () => {
+        const file = imageInput.files[0]
+
+        if(file){
+            imagePreview.src = URL.createObjectURL(file)
+        }
     })
 </script>
 
-<script src="../localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js" async=""></script>
+<!-- <script src="./localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js" async=""></script>
 <script>
     (self.__next_f = self.__next_f || []).push([0])
 </script>
@@ -123,7 +143,7 @@
 </script>
 <script>
     self.__next_f.push([1, "43:D{\"time\":8.029939000000013}\n43:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"},\"$35\",\"$4f\",0],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"},\"$35\",\"$50\",0]]\n4a:D{\"time\":8.84881000000314}\n4a:[[\"$\",\"title\",\"0\",{\"children\":\"Portfolio Admin\"},\"$35\",\"$52\",0],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Modern admin dashboard for managing your developer portfolio\"},\"$35\",\"$53\",0],[\"$\",\"meta\",\"2\",{\"name\":\"generator\",\"content\":\"v0.app\"},\"$35\",\"$54\",0],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/icon-light-32x32.png\",\"media\":\"(prefers-color-scheme: light)\"},\"$35\",\"$55\",0],[\"$\",\"link\",\"4\",{\"rel\":\"icon\",\"href\":\"/icon-dark-32x32.png\",\"media\":\"(prefers-color-scheme: dark)\"},\"$35\",\"$56\",0],[\"$\",\"link\",\"5\",{\"rel\":\"icon\",\"href\":\"/icon.svg\",\"type\":\"image/svg+xml\"},\"$35\",\"$57\",0],[\"$\",\"link\",\"6\",{\"rel\":\"apple-touch-icon\",\"href\":\"/apple-icon.png\"},\"$35\",\"$58\",0],[\"$\",\"$L5a\",\"7\",{},\"$35\",\"$59\",0]]\n3a:D{\"time\":9.356706999999005}\n3a:null\n"])
-</script>
+</script> -->
 </body>
 
 </html>

@@ -20,4 +20,4 @@ $routes->get('/admin/contact', 'Contact_AM::index');
 $routes->get('/admin/client', 'Client_AM::index');
 $routes->get('/admin/add_project', 'ProjectFrm::index');
 $routes->get('/admin/add_Experience', 'ExperienceFrm::index');
-$routes->get('/admin/save_logo', 'Save_logo::index');
+$routes->post('/admin/save_logo', 'Save_logo::index');

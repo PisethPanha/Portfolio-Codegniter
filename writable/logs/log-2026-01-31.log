@@ -1,0 +1,776 @@
+ERROR - 2026-01-31 00:36:36 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'portfolio_db' in C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'portfolio_db', 3306, '', 0)
+#1 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\USER\Desktop\Portfolio-Codegniter\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\USER\Desktop\Portfolio-Codegniter\app\Controllers\Branding_AM.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\USER\Desktop\Portfolio-Codegniter\system\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+#8 C:\Users\USER\Desktop\Portfolio-Codegniter\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+#9 C:\Users\USER\Desktop\Portfolio-Codegniter\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\USER\Desktop\Portfolio-Codegniter\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\USER\Desktop\Portfolio-Codegniter\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'portfolio_db' in C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\USER\Desktop\Portfolio-Codegniter\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\USER\Desktop\Portfolio-Codegniter\app\Controllers\Branding_AM.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\USER\Desktop\Portfolio-Codegniter\system\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+#7 C:\Users\USER\Desktop\Portfolio-Codegniter\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+#8 C:\Users\USER\Desktop\Portfolio-Codegniter\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\USER\Desktop\Portfolio-Codegniter\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\USER\Desktop\Portfolio-Codegniter\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#13 {main}
+CRITICAL - 2026-01-31 00:36:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'portfolio_db'
+[Method: GET, Route: admin/branding]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `logo_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Branding_AM.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 00:42:12 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 00:42:13 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+ERROR - 2026-01-31 01:01:43 --> mysqli_sql_exception: Table 'portfolio_db.portfolio_db' doesn't exist in C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\Users\USER\Desktop\Portfolio-Codegniter\app\Views\admin\branding.php(4): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\Users\USER\Desktop\Portfolio-Codegniter\system\View\View.php(226): include('C:\\Users\\USER\\D...')
+#5 C:\Users\USER\Desktop\Portfolio-Codegniter\system\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Common.php(1199): CodeIgniter\View\View->render('admin/branding', Array, true)
+#7 C:\Users\USER\Desktop\Portfolio-Codegniter\app\Controllers\Branding_AM.php(15): view('admin/branding', Array)
+#8 C:\Users\USER\Desktop\Portfolio-Codegniter\system\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+#9 C:\Users\USER\Desktop\Portfolio-Codegniter\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+#10 C:\Users\USER\Desktop\Portfolio-Codegniter\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\USER\Desktop\Portfolio-Codegniter\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\USER\Desktop\Portfolio-Codegniter\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\USER\Desktop\Portfolio-Codegniter\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#15 {main}
+CRITICAL - 2026-01-31 01:01:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'portfolio_db.portfolio_db' doesn't exist
+[Method: GET, Route: admin/branding]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 APPPATH\Views\admin\branding.php(4): CodeIgniter\Database\BaseConnection->query('SELECT * FROM portfolio_db')
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\app\\Views\\admin\\branding.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/branding', [], true)
+ 5 APPPATH\Controllers\Branding_AM.php(15): view('admin/branding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:01:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'portfolio_db.portfolio_db' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM portfolio_db')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM portfolio_db')
+ 3 APPPATH\Views\admin\branding.php(4): CodeIgniter\Database\BaseConnection->query('SELECT * FROM portfolio_db')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\app\\Views\\admin\\branding.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/branding', [], true)
+ 7 APPPATH\Controllers\Branding_AM.php(15): view('admin/branding', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:01:43 --> [Caused by] mysqli_sql_exception: Table 'portfolio_db.portfolio_db' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM portfolio_db', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM portfolio_db')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM portfolio_db')
+ 4 APPPATH\Views\admin\branding.php(4): CodeIgniter\Database\BaseConnection->query('SELECT * FROM portfolio_db')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\app\\Views\\admin\\branding.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/branding', [], true)
+ 8 APPPATH\Controllers\Branding_AM.php(15): view('admin/branding', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:02:03 --> Error: Object of class stdClass could not be converted to string
+[Method: GET, Route: admin/branding]
+in APPPATH\Views\admin\branding.php on line 7.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/branding', [], true)
+ 4 APPPATH\Controllers\Branding_AM.php(15): view('admin/branding', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:02:23 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+[Method: GET, Route: admin/branding]
+in APPPATH\Views\admin\branding.php on line 9.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/branding', [], true)
+ 4 APPPATH\Controllers\Branding_AM.php(15): view('admin/branding', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:02:54 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: admin/branding]
+in APPPATH\Views\admin\branding.php on line 7.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/branding', [], true)
+ 4 APPPATH\Controllers\Branding_AM.php(15): view('admin/branding', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:03:05 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: admin/branding]
+in APPPATH\Views\admin\branding.php on line 7.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/branding', [], true)
+ 4 APPPATH\Controllers\Branding_AM.php(15): view('admin/branding', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:04:53 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: admin/branding]
+in APPPATH\Views\admin\branding.php on line 44.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/branding', [], true)
+ 4 APPPATH\Controllers\Branding_AM.php(15): view('admin/branding')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:05:47 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: admin/branding]
+in APPPATH\Views\admin\branding.php on line 44.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/branding', [], true)
+ 4 APPPATH\Controllers\Branding_AM.php(15): view('admin/branding')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:21:27 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:21:28 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:22:32 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:22:33 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:24:07 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:24:08 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:24:58 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:25:00 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:26:01 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:26:02 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:27:05 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:27:05 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:27:22 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:27:24 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:30:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:30:22 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:30:22 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: admin/localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('admin/localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('admin/localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:32:27 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:32:28 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:32:45 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:32:47 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:34:52 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:34:52 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:36:17 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:36:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:39:01 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:39:02 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:40:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:40:31 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:41:46 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:41:48 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:44:23 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:44:24 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 01:48:14 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: admin/branding]
+in APPPATH\Views\admin\branding.php on line 21.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/branding', [], true)
+ 4 APPPATH\Controllers\Branding_AM.php(15): view('admin/branding')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Branding_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Branding_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:24:56 --> ErrorException: Undefined array key "shortName"
+[Method: GET, Route: admin/save_logo]
+in APPPATH\Controllers\Save_logo.php on line 13.
+ 1 APPPATH\Controllers\Save_logo.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "shortName"', 'C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\app\\Controllers\\Save_logo.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Save_logo->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Save_logo))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:29:34 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:29:34 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:29:35 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:29:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:29:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:29:50 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:30:58 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:30:58 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:30:59 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:31:09 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:31:09 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:31:10 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:34:15 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[root-of-the-server]__c6ce154e._.css')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:34:16 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
+CRITICAL - 2026-01-31 03:34:17 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Portfolio-Codegniter\\public\\index.php')
