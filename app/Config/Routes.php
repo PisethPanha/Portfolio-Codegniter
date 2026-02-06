@@ -20,6 +20,7 @@ $routes->get('/edit_experience/(:num)', 'ExperienceFrm::edit/$1');
 $routes->get('/delete_experience/(:num)', 'ExperienceFrm::delete/$1');
 $routes->get('/edit_skill/(:num)', 'Skills_AM::edit/$1');
 $routes->get('/delete_skill/(:num)', 'Skills_AM::delete/$1');
+$routes->get('/delete_client/(:num)', 'Client_AM::delete/$1');
 $routes->post('/update_skill', 'Skills_AM::update');
 $routes->post('admin/update_experience', 'ExperienceFrm::update');
 $routes->post('/admin/save_experience', 'ExperienceFrm::save');

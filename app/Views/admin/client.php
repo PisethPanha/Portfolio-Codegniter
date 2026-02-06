@@ -1,12 +1,6 @@
  <main class="flex-1 overflow-auto">
      <div class="p-8 space-y-8">
-         <div class="relative">
-             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground">
-                 <circle cx="11" cy="11" r="8"></circle>
-                 <path d="m21 21-4.3-4.3"></path>
-             </svg>
-             <input type="text" placeholder="Search by name, email, or subject..." class="w-full pl-12 pr-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" value="" />
-         </div>
+         
          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
              <div class="lg:col-span-2 gap-4">
                  <div class="grid gap-4">
@@ -33,7 +27,9 @@
                                                  <circle cx="12" cy="12" r="3"></circle>
                                              </svg>
                                          </a>
-                                         <button class="p-2 text-muted-foreground hover:text-destructive hover:bg-destructive/10 rounded-lg transition-colors duration-200" title="Delete">
+                                         <a
+                                         href="<?= base_url("delete_client/".$c['id']) ?>"
+                                         class="p-2 text-muted-foreground hover:text-destructive hover:bg-destructive/10 rounded-lg transition-colors duration-200" title="Delete">
                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2 w-4 h-4">
                                                  <path d="M3 6h18"></path>
                                                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
@@ -41,7 +37,7 @@
                                                  <line x1="10" x2="10" y1="11" y2="17"></line>
                                                  <line x1="14" x2="14" y1="11" y2="17"></line>
                                              </svg>
-                                         </button>
+</a>
                                      </div>
                                  </div>
                              </div>
