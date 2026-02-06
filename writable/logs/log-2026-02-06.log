@@ -1,0 +1,787 @@
+ERROR - 2026-02-06 11:03:52 --> mysqli_sql_exception: Table 'portfolio_db.logo' doesn't exist in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php(327): mysqli->query()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\ICT\Desktop\codeigniter4\app\Views\navbar.php(4): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\View\View.php(226): include('...')
+#5 C:\Users\ICT\Desktop\codeigniter4\system\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+#6 C:\Users\ICT\Desktop\codeigniter4\system\Common.php(1199): CodeIgniter\View\View->render()
+#7 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\Home.php(14): view()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#14 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2026-02-06 11:03:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'portfolio_db.logo' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 APPPATH\Views\navbar.php(4): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Home.php(14): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 11:03:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'portfolio_db.logo' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Views\navbar.php(4): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\navbar.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 6 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 7 APPPATH\Controllers\Home.php(14): view()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 11:03:52 --> [Caused by] mysqli_sql_exception: Table 'portfolio_db.logo' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH\Views\navbar.php(4): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\navbar.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 7 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 8 APPPATH\Controllers\Home.php(14): view()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-06 11:13:23 --> [DEPRECATED] Non-canonical cast (boolean) is deprecated, use the (bool) cast instead in VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Variable\Variable.php on line 172.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('C:\\Users\\ICT\\Desktop\\codeigniter4\\vendor\\composer/../cloudinary/transformation-builder-sdk/src/Transformation/Variable/Variable.php')
+ 3 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(255): Composer\Autoload\ClassLoader->loadClass('Cloudinary\\Transformation\\Variable\\Variable')
+ 4 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(156): Cloudinary\Transformation\QualifiersAction->collectVariables([...])
+ 5 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(123): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+ 6 [internal function]: Cloudinary\Transformation\QualifiersAction->generateTransformationAction([...])
+ 7 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(150): array_map([...], [...])
+ 8 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(102): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+ 9 [internal function]: Cloudinary\Transformation\QualifiersAction->__toString()
+10 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(207): strlen(Object(Cloudinary\Transformation\QualifiersAction))
+11 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(136): Cloudinary\ArrayUtils::safeFilterFunc(Object(Cloudinary\Transformation\QualifiersAction))
+12 [internal function]: Cloudinary\ArrayUtils::{closure:Cloudinary\ArrayUtils::implodeFiltered():136}(Object(Cloudinary\Transformation\QualifiersAction))
+13 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(225): array_filter([...], Object(Closure), 0)
+14 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(138): Cloudinary\ArrayUtils::safeFilter([...], Object(Closure), 0)
+15 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(258): Cloudinary\ArrayUtils::implodeFiltered('/', [...])
+16 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(124): Cloudinary\ArrayUtils::implodeUrl([...])
+17 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(144): Cloudinary\Transformation\CommonTransformation->toUrl()
+18 VENDORPATH\cloudinary\cloudinary_php\src\Api\Utils\ApiUtils.php(185): Cloudinary\Transformation\CommonTransformation->__toString()
+19 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(105): Cloudinary\Api\ApiUtils::serializeTransformation([...])
+20 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(135): Cloudinary\Api\Upload\UploadApi::buildUploadParams([...])
+21 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(161): Cloudinary\Api\Upload\UploadApi->uploadAsync('C:\\Users\\ICT\\AppData\\Local\\Temp\\phpF803.tmp', [...])
+22 APPPATH\Controllers\Hero_AM.php(65): Cloudinary\Api\Upload\UploadApi->upload('C:\\Users\\ICT\\AppData\\Local\\Temp\\phpF803.tmp', [...])
+23 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hero_AM->UpdateHero()
+24 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hero_AM))
+25 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+26 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+27 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+28 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+29 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-06 11:13:23 --> [DEPRECATED] Non-canonical cast (boolean) is deprecated, use the (bool) cast instead in VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Expression\ExpressionUtils.php on line 127.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('C:\\Users\\ICT\\Desktop\\codeigniter4\\vendor\\composer/../cloudinary/transformation-builder-sdk/src/Transformation/Expression/ExpressionUtils.php')
+ 3 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifierValue\ExpressionQualifierMultiValue.php(32): Composer\Autoload\ClassLoader->loadClass('Cloudinary\\Transformation\\Expression\\ExpressionUtils')
+ 4 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\BaseQualifier.php(176): Cloudinary\Transformation\ExpressionQualifierMultiValue->__toString()
+ 5 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\BaseQualifier.php(166): Cloudinary\Transformation\Qualifier\BaseQualifier->__toString()
+ 6 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\BaseAction.php(200): Cloudinary\Transformation\Qualifier\BaseQualifier->getStringQualifiers()
+ 7 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\BaseAction.php(213): Cloudinary\Transformation\BaseAction->getStringQualifiers()
+ 8 [internal function]: Cloudinary\Transformation\BaseAction->__toString()
+ 9 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(207): strlen(Object(Cloudinary\Transformation\Action))
+10 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(136): Cloudinary\ArrayUtils::safeFilterFunc(Object(Cloudinary\Transformation\Action))
+11 [internal function]: Cloudinary\ArrayUtils::{closure:Cloudinary\ArrayUtils::implodeFiltered():136}(Object(Cloudinary\Transformation\Action))
+12 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(225): array_filter([...], Object(Closure), 0)
+13 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(138): Cloudinary\ArrayUtils::safeFilter([...], Object(Closure), 0)
+14 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(160): Cloudinary\ArrayUtils::implodeFiltered(',', [...])
+15 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(123): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+16 [internal function]: Cloudinary\Transformation\QualifiersAction->generateTransformationAction([...])
+17 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(150): array_map([...], [...])
+18 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(102): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+19 [internal function]: Cloudinary\Transformation\QualifiersAction->__toString()
+20 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(207): strlen(Object(Cloudinary\Transformation\QualifiersAction))
+21 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(136): Cloudinary\ArrayUtils::safeFilterFunc(Object(Cloudinary\Transformation\QualifiersAction))
+22 [internal function]: Cloudinary\ArrayUtils::{closure:Cloudinary\ArrayUtils::implodeFiltered():136}(Object(Cloudinary\Transformation\QualifiersAction))
+23 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(225): array_filter([...], Object(Closure), 0)
+24 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(138): Cloudinary\ArrayUtils::safeFilter([...], Object(Closure), 0)
+25 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(258): Cloudinary\ArrayUtils::implodeFiltered('/', [...])
+26 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(124): Cloudinary\ArrayUtils::implodeUrl([...])
+27 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(144): Cloudinary\Transformation\CommonTransformation->toUrl()
+28 VENDORPATH\cloudinary\cloudinary_php\src\Api\Utils\ApiUtils.php(185): Cloudinary\Transformation\CommonTransformation->__toString()
+29 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(105): Cloudinary\Api\ApiUtils::serializeTransformation([...])
+30 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(135): Cloudinary\Api\Upload\UploadApi::buildUploadParams([...])
+31 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(161): Cloudinary\Api\Upload\UploadApi->uploadAsync('C:\\Users\\ICT\\AppData\\Local\\Temp\\phpF803.tmp', [...])
+32 APPPATH\Controllers\Hero_AM.php(65): Cloudinary\Api\Upload\UploadApi->upload('C:\\Users\\ICT\\AppData\\Local\\Temp\\phpF803.tmp', [...])
+33 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hero_AM->UpdateHero()
+34 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hero_AM))
+35 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+36 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+37 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+38 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+39 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-06 11:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-06 11:20:03 --> ErrorException: Undefined property: stdClass::$experience
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 40.
+ 1 APPPATH\Views\welcome_message.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Home.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 11:20:46 --> ErrorException: Attempt to read property "experience" on array
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 40.
+ 1 APPPATH\Views\welcome_message.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Home.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 11:21:25 --> ErrorException: Undefined property: stdClass::$experience
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 40.
+ 1 APPPATH\Views\welcome_message.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Home.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 11:21:41 --> Error: Object of class stdClass could not be converted to string
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 40.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Home.php(15): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+ERROR - 2026-02-06 11:33:03 --> mysqli_sql_exception: Table 'portfolio_db.your_table' doesn't exist in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php(327): mysqli->query()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\ICT\Desktop\codeigniter4\app\Views\welcome_message.php(5): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\View\View.php(226): include('...')
+#5 C:\Users\ICT\Desktop\codeigniter4\system\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+#6 C:\Users\ICT\Desktop\codeigniter4\system\Common.php(1199): CodeIgniter\View\View->render()
+#7 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\Home.php(15): view()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#14 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2026-02-06 11:33:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'portfolio_db.your_table' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 APPPATH\Views\welcome_message.php(5): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Home.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 11:33:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'portfolio_db.your_table' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Views\welcome_message.php(5): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\welcome_message.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 6 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 7 APPPATH\Controllers\Home.php(15): view()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 11:33:03 --> [Caused by] mysqli_sql_exception: Table 'portfolio_db.your_table' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH\Views\welcome_message.php(5): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\welcome_message.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 7 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 8 APPPATH\Controllers\Home.php(15): view()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 11:34:32 --> Error: Cannot use object of type mysqli as array
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 65.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Home.php(15): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 11:34:50 --> ErrorException: Undefined property: mysqli::$image
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 65.
+ 1 APPPATH\Views\welcome_message.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Home.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 12:44:02 --> ErrorException: Undefined variable $porject
+[Method: GET, Route: projects]
+in APPPATH\Views\projects.php on line 30.
+ 1 APPPATH\Views\projects.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\projects.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Project.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 12:44:35 --> ErrorException: Undefined variable $porject
+[Method: GET, Route: projects]
+in APPPATH\Views\projects.php on line 30.
+ 1 APPPATH\Views\projects.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\projects.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Project.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 12:50:42 --> ErrorException: Attempt to read property "image" on array
+[Method: GET, Route: projects]
+in APPPATH\Views\projects.php on line 34.
+ 1 APPPATH\Views\projects.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\projects.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Project.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 12:59:50 --> Error: Cannot use object of type mysqli as array
+[Method: GET, Route: projects]
+in APPPATH\Views\projects.php on line 28.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Project.php(15): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:00:07 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: projects]
+in APPPATH\Views\projects.php on line 28.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Project.php(15): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:02:28 --> ErrorException: Undefined variable $pro_cate
+[Method: GET, Route: projects]
+in APPPATH\Views\projects.php on line 28.
+ 1 APPPATH\Views\projects.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\projects.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Project.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:11:10 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: projects]
+in APPPATH\Views\projects.php on line 30.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Project.php(15): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:11:24 --> ErrorException: Undefined property: stdClass::$catagory
+[Method: GET, Route: projects]
+in APPPATH\Views\projects.php on line 30.
+ 1 APPPATH\Views\projects.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\projects.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Project.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:11:42 --> ErrorException: Undefined variable $project
+[Method: GET, Route: project-category/1]
+in APPPATH\Views\projects.php on line 42.
+ 1 APPPATH\Views\projects.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\projects.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\GetProjectCate.php(18): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GetProjectCate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:12:26 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__b19c597c._.css"
+[Method: GET, Route: project-category/_next/static/chunks/%5Broot-of-the-server%5D__b19c597c._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:12:26 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "5f5dd_@swc_helpers_cjs_323bdf19._.js"
+[Method: GET, Route: project-category/_next/static/chunks/5f5dd_@swc_helpers_cjs_323bdf19._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:19:26 --> ErrorException: Undefined array key "category"
+[Method: GET, Route: project-category/1]
+in APPPATH\Views\projects.php on line 31.
+ 1 APPPATH\Views\projects.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\projects.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\GetProjectCate.php(18): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GetProjectCate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:23:06 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: project-category/1]
+in APPPATH\Views\projects.php on line 31.
+ 1 APPPATH\Views\projects.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\projects.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\GetProjectCate.php(18): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GetProjectCate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:30:43 --> ErrorException: Undefined variable $cate_num
+[Method: GET, Route: projects]
+in APPPATH\Views\projects.php on line 31.
+ 1 APPPATH\Views\projects.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\projects.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Project.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 13:48:43 --> ErrorException: Undefined variable $query
+[Method: GET, Route: skills]
+in APPPATH\Views\skills.php on line 26.
+ 1 APPPATH\Views\skills.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\skills.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Skills.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Skills->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 14:05:21 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: contact]
+in APPPATH\Views\contact.php on line 27.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Contact.php(11): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Contact->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 14:23:38 --> ErrorException: Undefined array key "description"
+[Method: POST, Route: client]
+in APPPATH\Controllers\Client_AM.php on line 34.
+ 1 APPPATH\Controllers\Client_AM.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->save()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 14:39:27 --> ErrorException: Undefined property: stdClass::$name
+[Method: GET, Route: admin/add_project]
+in APPPATH\Views\admin\projectFrm.php on line 54.
+ 1 APPPATH\Views\admin\projectFrm.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\projectFrm.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\ProjectFrm.php(20): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-06 14:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 14:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-06 15:14:06 --> ErrorException: Undefined variable $s
+[Method: GET, Route: about]
+in APPPATH\Views\about.php on line 32.
+ 1 APPPATH\Views\about.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\About.php(11): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\About->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 15:14:21 --> ErrorException: Undefined property: stdClass::$skill_name
+[Method: GET, Route: about]
+in APPPATH\Views\about.php on line 32.
+ 1 APPPATH\Views\about.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\About.php(11): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\About->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 15:14:50 --> ErrorException: Undefined property: stdClass::$company
+[Method: GET, Route: about]
+in APPPATH\Views\about.php on line 33.
+ 1 APPPATH\Views\about.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\About.php(11): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\About->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 15:46:26 --> ErrorException: Undefined variable $hero
+[Method: GET, Route: admin/about]
+in APPPATH\Views\admin\aboutMe.php on line 10.
+ 1 APPPATH\Views\admin\aboutMe.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\aboutMe.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\About_AM.php(13): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\About_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-06 16:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 16:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 16:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 16:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 16:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 16:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 16:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 16:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 16:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 16:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 16:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 17:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 17:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 17:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 17:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 17:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 17:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 17:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 17:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-06 18:10:20 --> Error: Call to undefined method Cloudinary\Cloudinary::download()
+[Method: POST, Route: admin/update_about]
+in APPPATH\Controllers\About_AM.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\About_AM->update()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 18:11:48 --> Error: Class "Cloudinary\Url\Builder" not found
+[Method: POST, Route: admin/update_about]
+in APPPATH\Controllers\About_AM.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\About_AM->update()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-06 18:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-06 18:34:26 --> ErrorException: Undefined property: stdClass::$job_title
+[Method: GET, Route: about]
+in APPPATH\Views\about.php on line 17.
+ 1 APPPATH\Views\about.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\About.php(11): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\About->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 18:43:56 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: admin/hero]
+in APPPATH\Views\admin\hero.php on line 70.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Hero_AM.php(41): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hero_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 18:43:56 --> [Caused by] ErrorException: Undefined variable $resultProject
+in APPPATH\Views\admin\hero.php on line 70.
+ 1 APPPATH\Views\admin\hero.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\hero.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Hero_AM.php(41): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hero_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 18:44:29 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: admin/hero]
+in APPPATH\Views\admin\hero.php on line 81.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Hero_AM.php(41): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hero_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 18:44:29 --> [Caused by] ErrorException: Undefined variable $resultProject
+in APPPATH\Views\admin\hero.php on line 81.
+ 1 APPPATH\Views\admin\hero.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\hero.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Hero_AM.php(41): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hero_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-06 18:48:42 --> ErrorException: Undefined array key "satisfation"
+[Method: GET, Route: admin/hero]
+in APPPATH\Views\admin\hero.php on line 22.
+ 1 APPPATH\Views\admin\hero.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\hero.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Hero_AM.php(41): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hero_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-06 18:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 18:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 19:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 19:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 19:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 19:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 19:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 19:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 19:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 19:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-06 19:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

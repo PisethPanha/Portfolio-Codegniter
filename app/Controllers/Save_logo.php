@@ -14,13 +14,13 @@ class Save_logo extends BaseController
             'long_name' => $_POST['longName'],
             'font_style' => $_POST['fontStyle'],
             'font_weight' => $_POST['fontWeight'],
-            'color' => $_POST['color'],
+            'color' => $_POST['color']
            
         ];
 
         $logoModel->update(12, $data);
         return redirect()-> to(base_url('admin/branding'));
-       
+    //    return print_r($data);
 
 
 

@@ -1,9 +1,20 @@
+<?php
+$db = \Config\Database::connect();
+$query = $db->query("select * from experience_tbl");
+$queryAbout = $db->query("select * from aboutinfo");
+$queryHero   = $db->query('SELECT * FROM hero_tbl');
+$queryContact  = $db->query('SELECT * FROM contactInfo');
+$resultHero = $queryHero->getResult();
+$resultContact = $queryContact->getResult();
+$resultAbout = $queryAbout->getResult();
+$result = $query->getResult();
+?>
 <footer class="border-t border-border bg-card">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     <div>
-                        <h3 class="font-bold text-lg text-foreground mb-2">Alex Johnson</h3>
-                        <p class="text-sm text-muted-foreground">Full-stack developer crafting beautiful digital experiences.</p>
+                        <h3 class="font-bold text-lg text-foreground mb-2"><?= $resultHero[0] -> name ?></h3>
+                        <p class="text-sm text-muted-foreground"><?= $resultHero[0] -> short_bio ?></p>
                     </div>
                     <div>
                         <h4 class="font-semibold text-foreground mb-4">Quick Links</h4>

@@ -1,4 +1,8 @@
-
+        <?php
+        $db = \Config\Database::connect();
+        $query = $db->query("select * from contactInfo");
+        $result = $query->getResult()[0];
+        ?>
         <div class="min-h-screen bg-background text-foreground">
             <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
                 <div class="mb-12">
@@ -20,7 +24,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-semibold text-foreground mb-1">Email</h3>
-                                    <a href="mailto:alex@example.com" class="text-muted-foreground hover:text-accent transition-colors break-all">alex@example.com</a>
+                                    <a href="mailto:alex@example.com" class="text-muted-foreground hover:text-accent transition-colors break-all"><?= $result->email ?></a>
                                 </div>
                             </div>
                         </div>
@@ -33,7 +37,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-semibold text-foreground mb-1">Phone</h3>
-                                    <a href="tel:+1 (555) 000-0000" class="text-muted-foreground hover:text-accent transition-colors">+1 (555) 000-0000</a>
+                                    <a href="tel:+1 (555) 000-0000" class="text-muted-foreground hover:text-accent transition-colors"><?= $result->phone ?></a>
                                 </div>
                             </div>
                         </div>
@@ -47,7 +51,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-semibold text-foreground mb-1">Location</h3>
-                                    <p class="text-muted-foreground">San Francisco, CA</p>
+                                    <p class="text-muted-foreground"><?= $result->address ?></p>
                                 </div>
                             </div>
                         </div>
@@ -82,28 +86,27 @@
                         </div>
                     </div>
                     <div class="lg:col-span-2">
-                        <form class="bg-card rounded-lg border border-border p-8 space-y-6">
+                        <form method="post" action="<?= route_to("client") ?>" class="bg-card rounded-lg border border-border p-8 space-y-6">
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div class="space-y-2">
                                     <label for="name" class="block text-sm font-medium text-foreground">Name</label>
-                                    <input type="text" data-slot="input" class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive w-full" id="name" placeholder="Your name" required="" name="name" value=""/>
+                                    <input name="name" type="text" data-slot="input" class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive w-full" id="name" placeholder="Your name" required="" name="name" value="" />
                                 </div>
                                 <div class="space-y-2">
                                     <label for="email" class="block text-sm font-medium text-foreground">Email</label>
-                                    <input type="email" data-slot="input" class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive w-full" id="email" placeholder="your.email@example.com" required="" name="email" value=""/>
+                                    <input type="email" name="email" data-slot="input" class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive w-full" id="email" placeholder="your.email@example.com" required="" name="email" value="" />
                                 </div>
                             </div>
                             <div class="space-y-2">
                                 <label for="subject" class="block text-sm font-medium text-foreground">Subject</label>
-                                <input type="text" data-slot="input" class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive w-full" id="subject" placeholder="What is this about?" required="" name="subject" value=""/>
+                                <input type="text" name="subject" data-slot="input" class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive w-full" id="subject" placeholder="What is this about?" required="" name="subject" value="" />
                             </div>
                             <div class="space-y-2">
                                 <label for="message" class="block text-sm font-medium text-foreground">Message</label>
                                 <textarea id="message" name="message" placeholder="Your message here..." required="" rows="6" class="w-full rounded-md border border-input bg-background px-3 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
                             </div>
-                            <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-10 rounded-md px-6 has-[&gt;svg]:px-4 w-full" type="submit">Send Message</button>
+                            <button type="submit" data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-10 rounded-md px-6 has-[&gt;svg]:px-4 w-full" type="submit">Send Message</button>
                         </form>
                     </div>
                 </div>
             </section>
-         

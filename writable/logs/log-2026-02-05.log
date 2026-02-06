@@ -1,0 +1,1244 @@
+ERROR - 2026-02-05 03:45:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ICT\Desktop\codeigniter4\system\BaseModel.php(677): CodeIgniter\Model->doFindAll()
+#6 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\Skills_AM.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\Skills_AM->index()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#13 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Users\ICT\Desktop\codeigniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\BaseModel.php(677): CodeIgniter\Model->doFindAll()
+#5 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\Skills_AM.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\Skills_AM->index()
+#7 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#12 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-05 03:45:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: admin/skill]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\Skills_AM.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Skills_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 04:22:51 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 04:22:51 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 04:26:36 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 04:26:36 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:04:55 --> [DEPRECATED] Non-canonical cast (boolean) is deprecated, use the (bool) cast instead in VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Variable\Variable.php on line 172.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('C:\\Users\\ICT\\Desktop\\codeigniter4\\vendor\\composer/../cloudinary/transformation-builder-sdk/src/Transformation/Variable/Variable.php')
+ 3 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(255): Composer\Autoload\ClassLoader->loadClass('Cloudinary\\Transformation\\Variable\\Variable')
+ 4 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(156): Cloudinary\Transformation\QualifiersAction->collectVariables([...])
+ 5 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(123): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+ 6 [internal function]: Cloudinary\Transformation\QualifiersAction->generateTransformationAction([...])
+ 7 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(150): array_map([...], [...])
+ 8 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(102): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+ 9 [internal function]: Cloudinary\Transformation\QualifiersAction->__toString()
+10 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(207): strlen(Object(Cloudinary\Transformation\QualifiersAction))
+11 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(136): Cloudinary\ArrayUtils::safeFilterFunc(Object(Cloudinary\Transformation\QualifiersAction))
+12 [internal function]: Cloudinary\ArrayUtils::{closure:Cloudinary\ArrayUtils::implodeFiltered():136}(Object(Cloudinary\Transformation\QualifiersAction))
+13 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(225): array_filter([...], Object(Closure), 0)
+14 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(138): Cloudinary\ArrayUtils::safeFilter([...], Object(Closure), 0)
+15 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(258): Cloudinary\ArrayUtils::implodeFiltered('/', [...])
+16 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(124): Cloudinary\ArrayUtils::implodeUrl([...])
+17 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(144): Cloudinary\Transformation\CommonTransformation->toUrl()
+18 VENDORPATH\cloudinary\cloudinary_php\src\Api\Utils\ApiUtils.php(185): Cloudinary\Transformation\CommonTransformation->__toString()
+19 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(105): Cloudinary\Api\ApiUtils::serializeTransformation([...])
+20 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(135): Cloudinary\Api\Upload\UploadApi::buildUploadParams([...])
+21 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(161): Cloudinary\Api\Upload\UploadApi->uploadAsync('C:\\Users\\ICT\\AppData\\Local\\Temp\\php1FD8.tmp', [...])
+22 APPPATH\Controllers\Hero_AM.php(65): Cloudinary\Api\Upload\UploadApi->upload('C:\\Users\\ICT\\AppData\\Local\\Temp\\php1FD8.tmp', [...])
+23 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hero_AM->UpdateHero()
+24 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hero_AM))
+25 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+26 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+27 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+28 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+29 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:04:55 --> [DEPRECATED] Non-canonical cast (boolean) is deprecated, use the (bool) cast instead in VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Expression\ExpressionUtils.php on line 127.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('C:\\Users\\ICT\\Desktop\\codeigniter4\\vendor\\composer/../cloudinary/transformation-builder-sdk/src/Transformation/Expression/ExpressionUtils.php')
+ 3 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifierValue\ExpressionQualifierMultiValue.php(32): Composer\Autoload\ClassLoader->loadClass('Cloudinary\\Transformation\\Expression\\ExpressionUtils')
+ 4 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\BaseQualifier.php(176): Cloudinary\Transformation\ExpressionQualifierMultiValue->__toString()
+ 5 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\BaseQualifier.php(166): Cloudinary\Transformation\Qualifier\BaseQualifier->__toString()
+ 6 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\BaseAction.php(200): Cloudinary\Transformation\Qualifier\BaseQualifier->getStringQualifiers()
+ 7 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\BaseAction.php(213): Cloudinary\Transformation\BaseAction->getStringQualifiers()
+ 8 [internal function]: Cloudinary\Transformation\BaseAction->__toString()
+ 9 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(207): strlen(Object(Cloudinary\Transformation\Action))
+10 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(136): Cloudinary\ArrayUtils::safeFilterFunc(Object(Cloudinary\Transformation\Action))
+11 [internal function]: Cloudinary\ArrayUtils::{closure:Cloudinary\ArrayUtils::implodeFiltered():136}(Object(Cloudinary\Transformation\Action))
+12 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(225): array_filter([...], Object(Closure), 0)
+13 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(138): Cloudinary\ArrayUtils::safeFilter([...], Object(Closure), 0)
+14 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(160): Cloudinary\ArrayUtils::implodeFiltered(',', [...])
+15 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(123): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+16 [internal function]: Cloudinary\Transformation\QualifiersAction->generateTransformationAction([...])
+17 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(150): array_map([...], [...])
+18 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(102): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+19 [internal function]: Cloudinary\Transformation\QualifiersAction->__toString()
+20 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(207): strlen(Object(Cloudinary\Transformation\QualifiersAction))
+21 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(136): Cloudinary\ArrayUtils::safeFilterFunc(Object(Cloudinary\Transformation\QualifiersAction))
+22 [internal function]: Cloudinary\ArrayUtils::{closure:Cloudinary\ArrayUtils::implodeFiltered():136}(Object(Cloudinary\Transformation\QualifiersAction))
+23 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(225): array_filter([...], Object(Closure), 0)
+24 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(138): Cloudinary\ArrayUtils::safeFilter([...], Object(Closure), 0)
+25 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(258): Cloudinary\ArrayUtils::implodeFiltered('/', [...])
+26 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(124): Cloudinary\ArrayUtils::implodeUrl([...])
+27 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(144): Cloudinary\Transformation\CommonTransformation->toUrl()
+28 VENDORPATH\cloudinary\cloudinary_php\src\Api\Utils\ApiUtils.php(185): Cloudinary\Transformation\CommonTransformation->__toString()
+29 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(105): Cloudinary\Api\ApiUtils::serializeTransformation([...])
+30 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(135): Cloudinary\Api\Upload\UploadApi::buildUploadParams([...])
+31 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(161): Cloudinary\Api\Upload\UploadApi->uploadAsync('C:\\Users\\ICT\\AppData\\Local\\Temp\\php1FD8.tmp', [...])
+32 APPPATH\Controllers\Hero_AM.php(65): Cloudinary\Api\Upload\UploadApi->upload('C:\\Users\\ICT\\AppData\\Local\\Temp\\php1FD8.tmp', [...])
+33 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hero_AM->UpdateHero()
+34 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hero_AM))
+35 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+36 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+37 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+38 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+39 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 05:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 05:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-05 05:08:51 --> mysqli_sql_exception: Table 'portfolio_db.project_tbl' doesn't exist in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php(327): mysqli->query()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\ICT\Desktop\codeigniter4\system\BaseModel.php(838): CodeIgniter\Model->doInsert()
+#6 C:\Users\ICT\Desktop\codeigniter4\system\Model.php(797): CodeIgniter\BaseModel->insert()
+#7 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\ProjectFrm.php(84): CodeIgniter\Model->insert()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\ProjectFrm->save()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#14 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2026-02-05 05:13:08 --> ErrorException: Undefined variable $project
+[Method: GET, Route: admin/project]
+in APPPATH\Views\admin\project.php on line 25.
+ 1 APPPATH\Views\admin\project.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\project.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Project_AM.php(11): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:40:43 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 60.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:43:44 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 62.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:43:44 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 62.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:44:03 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 62.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:44:03 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 62.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:44:55 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 62.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:44:55 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 62.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:45:35 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 62.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:45:35 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 62.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:46:03 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 62.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 05:46:03 --> [DEPRECATED] The backtick (`) operator is deprecated, use shell_exec() instead in APPPATH\Views\admin\project.php on line 62.
+ 1 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/project', [], true)
+ 4 APPPATH\Controllers\Project_AM.php(15): view('admin/project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project_AM))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 07:13:33 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: admin/localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 07:13:33 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: admin/localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 07:13:33 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js"
+[Method: GET, Route: admin/localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 07:39:50 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: edit_project/2]
+in APPPATH\Views\admin\projectFrm.php on line 24.
+ 1 APPPATH\Views\admin\projectFrm.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\projectFrm.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\ProjectFrm.php(28): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 07:46:39 --> ParseError: syntax error, unexpected token "as"
+[Method: GET, Route: edit_project/2]
+in APPPATH\Views\admin\projectFrm.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\ProjectFrm.php(28): view()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 07:46:43 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: edit_project/2]
+in APPPATH\Views\admin\projectFrm.php on line 26.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\ProjectFrm.php(28): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+ERROR - 2026-02-05 08:26:10 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ICT\Desktop\codeigniter4\system\BaseModel.php(611): CodeIgniter\Model->doFind()
+#6 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\ProjectFrm.php(24): CodeIgniter\BaseModel->find()
+#7 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#13 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Users\ICT\Desktop\codeigniter4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\BaseModel.php(611): CodeIgniter\Model->doFind()
+#5 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\ProjectFrm.php(24): CodeIgniter\BaseModel->find()
+#6 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+#7 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#12 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-05 08:26:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: edit_project/2]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind()
+ 5 APPPATH\Controllers\ProjectFrm.php(24): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 08:32:20 --> ErrorException: Undefined variable $s
+[Method: GET, Route: edit_project/2]
+in APPPATH\Views\admin\projectFrm.php on line 22.
+ 1 APPPATH\Views\admin\projectFrm.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\projectFrm.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\ProjectFrm.php(28): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 08:32:51 --> ErrorException: Undefined variable $s
+[Method: GET, Route: edit_project/2]
+in APPPATH\Views\admin\projectFrm.php on line 22.
+ 1 APPPATH\Views\admin\projectFrm.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\projectFrm.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\ProjectFrm.php(28): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+ERROR - 2026-02-05 11:54:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ICT\Desktop\codeigniter4\system\BaseModel.php(611): CodeIgniter\Model->doFind()
+#6 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\ProjectFrm.php(24): CodeIgniter\BaseModel->find()
+#7 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#13 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Users\ICT\Desktop\codeigniter4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\BaseModel.php(611): CodeIgniter\Model->doFind()
+#5 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\ProjectFrm.php(24): CodeIgniter\BaseModel->find()
+#6 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+#7 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#12 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-05 11:54:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: edit_project/2]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind()
+ 5 APPPATH\Controllers\ProjectFrm.php(24): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 11:59:32 --> [DEPRECATED] Non-canonical cast (boolean) is deprecated, use the (bool) cast instead in VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Variable\Variable.php on line 172.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('C:\\Users\\ICT\\Desktop\\codeigniter4\\vendor\\composer/../cloudinary/transformation-builder-sdk/src/Transformation/Variable/Variable.php')
+ 3 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(255): Composer\Autoload\ClassLoader->loadClass('Cloudinary\\Transformation\\Variable\\Variable')
+ 4 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(156): Cloudinary\Transformation\QualifiersAction->collectVariables([...])
+ 5 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(123): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+ 6 [internal function]: Cloudinary\Transformation\QualifiersAction->generateTransformationAction([...])
+ 7 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(150): array_map([...], [...])
+ 8 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(102): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+ 9 [internal function]: Cloudinary\Transformation\QualifiersAction->__toString()
+10 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(207): strlen(Object(Cloudinary\Transformation\QualifiersAction))
+11 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(136): Cloudinary\ArrayUtils::safeFilterFunc(Object(Cloudinary\Transformation\QualifiersAction))
+12 [internal function]: Cloudinary\ArrayUtils::{closure:Cloudinary\ArrayUtils::implodeFiltered():136}(Object(Cloudinary\Transformation\QualifiersAction))
+13 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(225): array_filter([...], Object(Closure), 0)
+14 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(138): Cloudinary\ArrayUtils::safeFilter([...], Object(Closure), 0)
+15 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(258): Cloudinary\ArrayUtils::implodeFiltered('/', [...])
+16 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(124): Cloudinary\ArrayUtils::implodeUrl([...])
+17 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(144): Cloudinary\Transformation\CommonTransformation->toUrl()
+18 VENDORPATH\cloudinary\cloudinary_php\src\Api\Utils\ApiUtils.php(185): Cloudinary\Transformation\CommonTransformation->__toString()
+19 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(105): Cloudinary\Api\ApiUtils::serializeTransformation([...])
+20 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(135): Cloudinary\Api\Upload\UploadApi::buildUploadParams([...])
+21 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(161): Cloudinary\Api\Upload\UploadApi->uploadAsync('C:\\Users\\ICT\\AppData\\Local\\Temp\\phpB5CB.tmp', [...])
+22 APPPATH\Controllers\ProjectFrm.php(122): Cloudinary\Api\Upload\UploadApi->upload('C:\\Users\\ICT\\AppData\\Local\\Temp\\phpB5CB.tmp', [...])
+23 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->update()
+24 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectFrm))
+25 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+26 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+27 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+28 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+29 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+WARNING - 2026-02-05 11:59:32 --> [DEPRECATED] Non-canonical cast (boolean) is deprecated, use the (bool) cast instead in VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Expression\ExpressionUtils.php on line 127.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('C:\\Users\\ICT\\Desktop\\codeigniter4\\vendor\\composer/../cloudinary/transformation-builder-sdk/src/Transformation/Expression/ExpressionUtils.php')
+ 3 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifierValue\ExpressionQualifierMultiValue.php(32): Composer\Autoload\ClassLoader->loadClass('Cloudinary\\Transformation\\Expression\\ExpressionUtils')
+ 4 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\BaseQualifier.php(176): Cloudinary\Transformation\ExpressionQualifierMultiValue->__toString()
+ 5 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\BaseQualifier.php(166): Cloudinary\Transformation\Qualifier\BaseQualifier->__toString()
+ 6 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\BaseAction.php(200): Cloudinary\Transformation\Qualifier\BaseQualifier->getStringQualifiers()
+ 7 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\BaseAction.php(213): Cloudinary\Transformation\BaseAction->getStringQualifiers()
+ 8 [internal function]: Cloudinary\Transformation\BaseAction->__toString()
+ 9 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(207): strlen(Object(Cloudinary\Transformation\Action))
+10 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(136): Cloudinary\ArrayUtils::safeFilterFunc(Object(Cloudinary\Transformation\Action))
+11 [internal function]: Cloudinary\ArrayUtils::{closure:Cloudinary\ArrayUtils::implodeFiltered():136}(Object(Cloudinary\Transformation\Action))
+12 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(225): array_filter([...], Object(Closure), 0)
+13 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(138): Cloudinary\ArrayUtils::safeFilter([...], Object(Closure), 0)
+14 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(160): Cloudinary\ArrayUtils::implodeFiltered(',', [...])
+15 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(123): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+16 [internal function]: Cloudinary\Transformation\QualifiersAction->generateTransformationAction([...])
+17 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(150): array_map([...], [...])
+18 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\Qualifier\QualifiersAction.php(102): Cloudinary\Transformation\QualifiersAction->generateTransformationString([...])
+19 [internal function]: Cloudinary\Transformation\QualifiersAction->__toString()
+20 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(207): strlen(Object(Cloudinary\Transformation\QualifiersAction))
+21 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(136): Cloudinary\ArrayUtils::safeFilterFunc(Object(Cloudinary\Transformation\QualifiersAction))
+22 [internal function]: Cloudinary\ArrayUtils::{closure:Cloudinary\ArrayUtils::implodeFiltered():136}(Object(Cloudinary\Transformation\QualifiersAction))
+23 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(225): array_filter([...], Object(Closure), 0)
+24 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(138): Cloudinary\ArrayUtils::safeFilter([...], Object(Closure), 0)
+25 VENDORPATH\cloudinary\transformation-builder-sdk\src\Utils\ArrayUtils.php(258): Cloudinary\ArrayUtils::implodeFiltered('/', [...])
+26 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(124): Cloudinary\ArrayUtils::implodeUrl([...])
+27 VENDORPATH\cloudinary\transformation-builder-sdk\src\Transformation\CommonTransformation.php(144): Cloudinary\Transformation\CommonTransformation->toUrl()
+28 VENDORPATH\cloudinary\cloudinary_php\src\Api\Utils\ApiUtils.php(185): Cloudinary\Transformation\CommonTransformation->__toString()
+29 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(105): Cloudinary\Api\ApiUtils::serializeTransformation([...])
+30 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(135): Cloudinary\Api\Upload\UploadApi::buildUploadParams([...])
+31 VENDORPATH\cloudinary\cloudinary_php\src\Api\Upload\UploadTrait.php(161): Cloudinary\Api\Upload\UploadApi->uploadAsync('C:\\Users\\ICT\\AppData\\Local\\Temp\\phpB5CB.tmp', [...])
+32 APPPATH\Controllers\ProjectFrm.php(122): Cloudinary\Api\Upload\UploadApi->upload('C:\\Users\\ICT\\AppData\\Local\\Temp\\phpB5CB.tmp', [...])
+33 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->update()
+34 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectFrm))
+35 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+36 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+37 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+38 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+39 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 12:04:52 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/project]
+in APPPATH\Views\admin\project.php on line 45.
+ 1 APPPATH\Views\admin\project.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\project.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Project_AM.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 12:09:05 --> ErrorException: Undefined variable $skill
+[Method: GET, Route: admin/add_project]
+in APPPATH\Views\admin\projectFrm.php on line 29.
+ 1 APPPATH\Views\admin\projectFrm.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\projectFrm.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\ProjectFrm.php(19): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectFrm->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+ERROR - 2026-02-05 14:50:06 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ICT\Desktop\codeigniter4\system\BaseModel.php(611): CodeIgniter\Model->doFind()
+#6 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\Contact_AM.php(12): CodeIgniter\BaseModel->find()
+#7 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\Contact_AM->index()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#13 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ICT\Desktop\codeigniter4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ICT\Desktop\codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Users\ICT\Desktop\codeigniter4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ICT\Desktop\codeigniter4\system\BaseModel.php(611): CodeIgniter\Model->doFind()
+#5 C:\Users\ICT\Desktop\codeigniter4\app\Controllers\Contact_AM.php(12): CodeIgniter\BaseModel->find()
+#6 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(933): App\Controllers\Contact_AM->index()
+#7 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\ICT\Desktop\codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\ICT\Desktop\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\Users\ICT\Desktop\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#12 C:\Users\ICT\Desktop\codeigniter4\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-05 14:50:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: admin/contact]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind()
+ 5 APPPATH\Controllers\Contact_AM.php(12): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Contact_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 14:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 14:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 14:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 14:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 15:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 15:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 15:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 15:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 15:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 15:47:55 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: admin/client]
+in APPPATH\Views\admin\client.php on line 73.
+ 1 APPPATH\Views\admin\client.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\client.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Client_AM.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 15:48:30 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: admin/client]
+in APPPATH\Views\admin\client.php on line 73.
+ 1 APPPATH\Views\admin\client.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\client.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Client_AM.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 15:49:43 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: admin/client]
+in APPPATH\Views\admin\client.php on line 73.
+ 1 APPPATH\Views\admin\client.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\client.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Client_AM.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 15:50:20 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: admin/client]
+in APPPATH\Views\admin\client.php on line 73.
+ 1 APPPATH\Views\admin\client.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\client.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Client_AM.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 15:51:18 --> ErrorException: Undefined variable $client2
+[Method: GET, Route: admin/client]
+in APPPATH\Views\admin\client.php on line 73.
+ 1 APPPATH\Views\admin\client.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\client.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Client_AM.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 15:51:29 --> ErrorException: Undefined variable $client2
+[Method: GET, Route: admin/client]
+in APPPATH\Views\admin\client.php on line 73.
+ 1 APPPATH\Views\admin\client.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\client.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Client_AM.php(15): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 15:53:01 --> ParseError: syntax error, unexpected token "echo"
+[Method: GET, Route: admin/client]
+in APPPATH\Views\admin\client.php on line 73.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Client_AM.php(15): view()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 15:54:17 --> ErrorException: Undefined variable $client
+[Method: GET, Route: get_client/1]
+in APPPATH\Views\admin\client.php on line 14.
+ 1 APPPATH\Views\admin\client.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\client.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Client_AM.php(25): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->get()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 15:56:07 --> ErrorException: Array to string conversion
+[Method: GET, Route: get_client/1]
+in APPPATH\Views\admin\client.php on line 73.
+ 1 APPPATH\Views\admin\client.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\client.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Client_AM.php(26): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->get()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 15:56:10 --> ErrorException: Array to string conversion
+[Method: GET, Route: get_client/1]
+in APPPATH\Views\admin\client.php on line 73.
+ 1 APPPATH\Views\admin\client.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ICT\\Desktop\\codeigniter4\\app\\Views\\admin\\client.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Client_AM.php(26): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client_AM->get()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 16:10:54 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:10:54 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:10:54 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:12:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 16:14:43 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:14:43 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 16:14:46 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:14:46 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:14:46 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 16:15:59 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:15:59 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 16:16:00 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:16:00 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 16:16:02 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:16:02 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:16:02 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:16:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:16:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:16:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 16:16:31 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:16:31 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 16:16:32 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:16:32 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[turbopack]_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:16:32 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 16:20:54 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:20:54 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 16:20:59 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[root-of-the-server]__c6ce154e._.css.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/%5Broot-of-the-server%5D__c6ce154e._.css.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+CRITICAL - 2026-02-05 16:20:59 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "e324f_@swc_helpers_cjs_6ba006f4._.js.map"
+[Method: GET, Route: localhost3001/_next/static/chunks/e324f_@swc_helpers_cjs_6ba006f4._.js.map]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ICT\\Desktop\\codeigniter4\\public\\index.php')
+DEBUG - 2026-02-05 16:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 16:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

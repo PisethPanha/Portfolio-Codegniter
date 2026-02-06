@@ -1,10 +1,20 @@
+<?php
+
+$db = \Config\Database::connect();
+$queryLogo   = $db->query('SELECT * FROM logo_tbl');
+$queryProjectCate   = $db->query('SELECT * FROM project_cate');
+$resultLogo = $queryLogo->getResult();
+$resultProjectCate = $queryProjectCate->getResult();
+
+?>
+
 <nav class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
             <!-- Logo -->
             <a class="flex items-center gap-2 font-bold text-xl text-foreground" href="/">
-                <span id="shortNameBgPreview" class="h-8 w-8 rounded-lg text-accent-foreground flex items-center justify-center font-bold">Y</span>
-                Panha
+                <span id="shortNameBgPreview" class="h-8 w-8 rounded-lg bg-[<?= $resultLogo[0]->color ?>] text-accent-foreground flex items-center justify-center font-bold"><?= $resultLogo[0]->short_name ?></span>
+                <?= $resultLogo[0]->long_name ?>
             </a>
 
 
@@ -26,9 +36,17 @@
 
                     <div id="projectsDropdown"
                         class="absolute left-0 mt-2 w-40 bg-background border border-border rounded-md shadow-lg hidden z-50">
-                        <a href="project1.html" class="block px-4 py-2 text-sm hover:bg-accent/10">Project 1</a>
-                        <a href="project2.html" class="block px-4 py-2 text-sm hover:bg-accent/10">Project 2</a>
-                        <a href="project3.html" class="block px-4 py-2 text-sm hover:bg-accent/10">Project 3</a>
+                        <?php
+                        foreach ($resultProjectCate as $pro_cate) {
+
+                        ?>
+                            <a
+                                href="<?= "http://localhost:8080/project-category/" . $pro_cate->id ?>"
+                                style="background-color: <?= isset($cate_num) ? ($pro_cate->id == $cate_num ? "white" : "") : "" ?>; color: <?= isset($cate_num) ? ($pro_cate->id == $cate_num ? "black" : "") : "white" ?>;"
+                                data-slot="button" class="block px-4 py-2 text-sm hover:bg-accent/10"><?= $pro_cate->cate_name ?></a>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
                 <a class="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground" href="<?= route_to('contact') ?>">Contact</a>
@@ -71,14 +89,14 @@
 
         function setToggleMode(isDL) {
             let color = "dark"
-            if (isDL == 'true'){
+            if (isDL == 'true') {
                 color = "light"
-            }else if (isDL == 'false'){
+            } else if (isDL == 'false') {
                 color = "dark"
             }
-            
-            
-            
+
+
+
             ((e, i, s, u, m, a, l, h) => {
                 let d = document.documentElement,
                     w = [
@@ -111,7 +129,7 @@
                 } catch (n) {}
             })("class", "portfolio-theme", color, null, ["light", "dark"], null, true, true)
         }
-        
+
 
         setToggleMode(true)
     </script>

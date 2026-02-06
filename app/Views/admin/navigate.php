@@ -43,13 +43,21 @@
                 </svg>
                 <span
                     class="text-sm font-medium">Experience</span>
-            </a><a href="<?=  route_to("admin/skill") ?>" class="<?= service('uri')->getSegment(2) == 'skill' ? "bg-sidebar-primary text-sidebar-primary-foreground" : 'text-sidebar-foreground hover:bg-sidebar-accent' ?> w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors duration-200 text-left "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml w-5 h-5 flex-shrink-0">
+            </a>
+            <a href="<?=  route_to("admin/about") ?>"
+                class="<?= service('uri')->getSegment(2) == 'about' ? "bg-sidebar-primary text-sidebar-primary-foreground" : 'text-sidebar-foreground hover:bg-sidebar-accent' ?> w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors duration-200 text-left ">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill=" <?= service('uri')->getSegment(2) == 'about' ? "#FFFFFF" : "#1f1f1f" ?>"><path d="M440-280h80v-240h-80v240Zm68.5-331.5Q520-623 520-640t-11.5-28.5Q497-680 480-680t-28.5 11.5Q440-657 440-640t11.5 28.5Q463-600 480-600t28.5-11.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                <span
+                    class="text-sm font-medium">About Info</span>
+            </a>
+            <a href="<?=  route_to("admin/skill") ?>" class="<?= service('uri')->getSegment(2) == 'skill' ? "bg-sidebar-primary text-sidebar-primary-foreground" : 'text-sidebar-foreground hover:bg-sidebar-accent' ?> w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors duration-200 text-left "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml w-5 h-5 flex-shrink-0">
                     <path d="m18 16 4-4-4-4"></path>
                     <path d="m6 8-4 4 4 4"></path>
                     <path d="m14.5 4-5 16"></path>
                 </svg><span class="text-sm font-medium">Skills</span></a>
             <a href="<?=  route_to("admin/project") ?>"
-                class="<?= service('uri')->getSegment(2) == 'project' ? "bg-sidebar-primary text-sidebar-primary-foreground" : 'text-sidebar-foreground hover:bg-sidebar-accent' ?> w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors duration-200 text-left "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-5 h-5 flex-shrink-0">
+                class="<?= service('uri')->getSegment(2) == 'project' ? "bg-sidebar-primary text-sidebar-primary-foreground" : 'text-sidebar-foreground hover:bg-sidebar-accent' ?> w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors duration-200 text-left ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-5 h-5 flex-shrink-0">
                     <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path>
                     <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path>
                     <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path>
@@ -66,10 +74,10 @@
                 </svg>
                 <span
                     class="text-sm font-medium">Client Contacts</span>
-            </a><button class="<?= service('uri')->getSegment(2) == 'preview' ? "bg-sidebar-primary text-sidebar-primary-foreground" : 'text-sidebar-foreground hover:bg-sidebar-accent' ?> w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors duration-200 text-left "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-5 h-5 flex-shrink-0">
+            </a><a href="http://localhost:8080/" class="<?= service('uri')->getSegment(2) == 'preview' ? "bg-sidebar-primary text-sidebar-primary-foreground" : 'text-sidebar-foreground hover:bg-sidebar-accent' ?> w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors duration-200 text-left "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-5 h-5 flex-shrink-0">
                     <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
                     <circle cx="12" cy="12" r="3"></circle>
-                </svg><span class="text-sm font-medium">Preview</span></button>
+                </svg><span class="text-sm font-medium">Preview</span></a>
         </nav>
         <div
             class="p-4 border-t border-sidebar-border">

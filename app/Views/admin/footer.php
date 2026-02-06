@@ -32,78 +32,78 @@
     let selectedFont = document.querySelector("#selectedFont")
     let fontWeightInput = document.querySelector("#fontWeightInput")
 
-  
 
-   try {
 
-    colorInput.addEventListener("input", () => {
-        colorBox.value = colorInput.value
-        lg_color_code_preview.innerHTML = colorInput.value
-        shortNameBgPreview.style.backgroundColor = colorInput.value
-        shortNameBgPreviewBttom.style.backgroundColor = colorInput.value
-        // console.log(colorInput.value)
-    })
+    try {
 
-     fontSelect.addEventListener("change", () => {
-        let font = fontSelect.value
-
-        // Map select values to actual CSS font-family strings
-        const fontMap = {
-            inter: "'Inter', sans-serif",
-            poppins: "'Poppins', sans-serif",
-            playfair: "'Playfair Display', serif",
-            roboto: "'Roboto', sans-serif",
-            montserrat: "'Montserrat', sans-serif",
-            lato: "'Lato', sans-serif",
-            open_sans: "'Open Sans', sans-serif",
-            oswald: "'Oswald', sans-serif",
-            raleway: "'Raleway', sans-serif"
-        }
-
-        longNamePreview.style.fontFamily = fontMap[font] || "sans-serif"
-
-        selectedFont.innerHTML = fontMap[font]
-    })
-
-    ftBtns.forEach((ele) => {
-       try {
-         ele.addEventListener("click", () => {
-            // Reset all buttons (optional)
-            ftBtns.forEach(btn => {
-                btn.style.backgroundColor = "";
-                btn.style.color = "#0b0b0b"
-            })
-
-            // Set clicked button color
-            ele.style.backgroundColor = "#1c69e3"
-            ele.style.color = "#f8f8f8"
-            fontWeight.innerHTML = ele.value
-            fontWeightInput.value = ele.value
-            longNamePreview.style.fontWeight = ele.value == "Regular" ? "400" : ele.value == "Medium" ? "600" : ele.value == "Semibold" ? "700" : ele.value == "Bold" ? "900" : "400"
+        colorInput.addEventListener("input", () => {
+            colorBox.value = colorInput.value
+            lg_color_code_preview.innerHTML = colorInput.value
+            shortNameBgPreview.style.backgroundColor = colorInput.value
+            shortNameBgPreviewBttom.style.backgroundColor = colorInput.value
+            // console.log(colorInput.value)
         })
-       } catch (error) {
+
+        fontSelect.addEventListener("change", () => {
+            let font = fontSelect.value
+
+            // Map select values to actual CSS font-family strings
+            const fontMap = {
+                inter: "'Inter', sans-serif",
+                poppins: "'Poppins', sans-serif",
+                playfair: "'Playfair Display', serif",
+                roboto: "'Roboto', sans-serif",
+                montserrat: "'Montserrat', sans-serif",
+                lato: "'Lato', sans-serif",
+                open_sans: "'Open Sans', sans-serif",
+                oswald: "'Oswald', sans-serif",
+                raleway: "'Raleway', sans-serif"
+            }
+
+            longNamePreview.style.fontFamily = fontMap[font] || "sans-serif"
+
+            selectedFont.innerHTML = fontMap[font]
+        })
+
+        ftBtns.forEach((ele) => {
+            try {
+                ele.addEventListener("click", () => {
+                    // Reset all buttons (optional)
+                    ftBtns.forEach(btn => {
+                        btn.style.backgroundColor = "";
+                        btn.style.color = "#0b0b0b"
+                    })
+
+                    // Set clicked button color
+                    ele.style.backgroundColor = "#1c69e3"
+                    ele.style.color = "#f8f8f8"
+                    fontWeight.innerHTML = ele.value
+                    fontWeightInput.value = ele.value
+                    longNamePreview.style.fontWeight = ele.value == "Regular" ? "400" : ele.value == "Medium" ? "600" : ele.value == "Semibold" ? "700" : ele.value == "Bold" ? "900" : "400"
+                })
+            } catch (error) {
+                console.log(error);
+
+            }
+        })
+
+        longName.addEventListener("input", () => {
+            longNamePreview.innerHTML = longName.value
+
+
+        })
+
+        shortName.addEventListener("input", () => {
+            shortNameBgPreview.innerHTML = shortName.value
+        })
+
+        shortBio.addEventListener("input", () => {
+            shortBioPre.innerHTML = shortBio.value
+        })
+    } catch (error) {
         console.log(error);
-        
-       }
-    })
 
-     longName.addEventListener("input", () => {
-        longNamePreview.innerHTML = longName.value
-        
-        
-    })
-
-    shortName.addEventListener("input", () => {
-        shortNameBgPreview.innerHTML = shortName.value
-    })
-
-    shortBio.addEventListener("input", () => {
-        shortBioPre.innerHTML = shortBio.value
-    })
-   } catch (error) {
-    console.log(error);
-    
-   }
+    }
 </script>
 <script>
     jobTitle.addEventListener("input", () => {
@@ -116,10 +116,139 @@
     imageInput.addEventListener("change", () => {
         const file = imageInput.files[0]
 
-        if(file){
+        if (file) {
             imagePreview.src = URL.createObjectURL(file)
         }
     })
+</script>
+<script>
+    let percent = document.querySelector("#percent")
+    let range = document.querySelector("#range")
+    percent.innerHTML = range.value + "%"
+
+    range.addEventListener("input", () => {
+        percent.innerHTML = range.value + "%"
+    })
+</script>
+
+<script>
+    const skillTags = document.querySelectorAll(".skillTag");
+    const techStackInput = document.getElementById("techStackInput");
+
+    // 1️⃣ Initialize stack from PHP value
+    let stacks = techStackInput.value ?
+        techStackInput.value.split(",").map(s => s.trim()) :
+        [];
+
+    // 2️⃣ Sync UI on load
+    skillTags.forEach(tag => {
+        if (stacks.includes(tag.value)) {
+            tag.classList.add("bg-blue-400", "text-white");
+        }
+    });
+
+    // 3️⃣ Toggle logic
+    skillTags.forEach(tag => {
+        tag.addEventListener("click", () => {
+
+            if (stacks.includes(tag.value)) {
+                // remove
+                stacks = stacks.filter(item => item !== tag.value);
+                tag.classList.remove("bg-blue-400", "text-white");
+            } else {
+                // add
+                stacks.push(tag.value);
+                tag.classList.add("bg-blue-400", "text-white");
+            }
+
+            techStackInput.value = stacks.join(", ");
+        });
+    });
+</script>
+
+
+<script>
+    let emailPre = document.querySelector("#emailPre")
+    let phonePre = document.querySelector("#phonePre")
+    let addressPre = document.querySelector("#addressPre")
+    let linkedInPre = document.querySelector("#linkedInPre")
+    let githubPre = document.querySelector("#githubPre")
+    let twitterPre = document.querySelector("#twitterPre")
+
+    let emailInput = document.querySelector("#emailInput")
+    let phoneInput = document.querySelector("#phoneInput")
+    let addressInput = document.querySelector("#addressInput")
+    let linkedInInput = document.querySelector("#linkedInInput")
+    let githubInput = document.querySelector("#githubInput")
+    let twitterInput = document.querySelector("#twitterInput")
+
+     
+
+    emailInput.addEventListener("input", () => {
+        emailPre.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 text-primary">
+                                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg>` + emailInput.value
+    })
+    phoneInput.addEventListener("input", () => {
+        phonePre.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 text-primary">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>` + phoneInput.value
+    })
+    addressInput.addEventListener("input", () => {
+        addressPre.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 text-primary">
+                                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>` + addressInput.value
+    })
+    linkedInInput.addEventListener("input", () => {
+        linkedInPre.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-4 h-4">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect width="4" height="12" x="2" y="9"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>` + linkedInInput.value
+    })
+    githubInput.addEventListener("input", () => {
+        githubPre.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-4 h-4">
+                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                    </svg>` + githubInput.value
+    })
+    twitterInput.addEventListener("input", () => {
+        twitterPre.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-4 h-4">
+                                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                                    </svg>` + twitterInput.value
+    })
+</script>
+
+<script>
+    let client = document.querySelectorAll("#client")
+    let noClientSelected = document.querySelector("#noClientSelected")
+    let clientSelected = document.querySelector("#clientSelected")
+    let closeClient = document.querySelector("#closeClient")
+    let clientName = document.querySelector("#clientName")
+
+    if(clientName.innerHTML != ""){
+        clientSelected.style.display = "flex"
+        noClientSelected.style.display = "none"
+    }else{
+    clientSelected.style.display = "none"
+    }
+
+    
+
+    closeClient.addEventListener("click", () => {
+        clientSelected.style.display = "none"
+        noClientSelected.style.display = "flex"
+    })
+
+    // client.forEach((ele) => {
+    //     ele.addEventListener("click", () => {
+    //     noClientSelected.style.display = "none"
+    //     clientSelected.style.display = "flex"
+    // })
+    // })
+
 </script>
 
 <!-- <script src="./localhost3001/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_2894d2b7._.js" async=""></script>

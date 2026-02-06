@@ -14,14 +14,14 @@ $logo = $query->getResult()[0];
                 <form method="post" action="<?= base_url("admin/save_logo") ?>" class="space-y-6">
                     <div>
                         <label class="block text-sm font-medium text-foreground mb-2">Short Logo</label>
-                        <input name="shortName" type="text" maxlength="2" id="shortName" value="<?= $logo -> short_name ?>"
+                        <input name="shortName" type="text" maxlength="2" id="shortName" value="<?= $logo->short_name ?>"
                             class="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                             placeholder="Enter your brand name" />
                         <p class="text-xs text-muted-foreground mt-2">This text appears in your portfolio header</p>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-foreground mb-2">Long Logo</label>
-                        <input type="text" name="longName" id="longName" value="<?= $logo -> long_name ?>"
+                        <input type="text" name="longName" id="longName" value="<?= $logo->long_name ?>"
                             class="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                             placeholder="Enter your brand name" />
                         <p class="text-xs text-muted-foreground mt-2">This text appears in your portfolio header</p>
@@ -37,7 +37,7 @@ $logo = $query->getResult()[0];
                             foreach (['inter', 'poppins', 'playfair', 'roboto', 'montserrat', 'lato', 'open_sans', 'oswald', 'raleway'] as $font) {
                                 echo "<option value='$font'";
 
-                                if ($font == $logo -> font_style) {
+                                if ($font == $logo->font_style) {
                                     echo 'selected';
                                 }
 
@@ -49,51 +49,51 @@ $logo = $query->getResult()[0];
                         </select>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-foreground mb-3">Font Weight</label>
-                        <input class="" id="fontWeightInput" name="fontWeight" value="<?= $logo -> font_weight ?>">
+                        <label class="block  text-sm font-medium text-foreground mb-3">Font Weight</label>
+                        <input class="hidden" id="fontWeightInput" name="fontWeight" value="<?= $logo->font_weight ?>">
                         <div class="grid grid-cols-2 gap-3">
                             <input type="button" id="fw_btn"
 
                                 style="
-                                <?php 
-                                    if($logo -> font_weight == 'Regular'){
-                                        echo ' background-color: #4255ff; color: white;';
-                                    }
+                                <?php
+                                if ($logo->font_weight == 'Regular') {
+                                    echo ' background-color: #4255ff; color: white;';
+                                }
                                 ?>
                                 "
                                 class="px-4 py-2 rounded-lg border transition-colors duration-200 text-sm font-medium bg-muted text-foreground border-border hover:border-primary"
                                 value="Regular">
-                                
+
                             <input type="button" id="fw_btn"
-                                
+
                                 style="
-                                <?php 
-                                    if($logo -> font_weight == 'Medium'){
-                                        echo ' background-color: #4255ff; color: white;';
-                                    }
+                                <?php
+                                if ($logo->font_weight == 'Medium') {
+                                    echo ' background-color: #4255ff; color: white;';
+                                }
                                 ?>
                                 "
                                 class="px-4 py-2 rounded-lg border transition-colors duration-200 text-sm font-medium bg-[#e4e4e4] text-foreground border-border hover:border-primary"
                                 value="Medium">
                             <input type="button" id="fw_btn"
 
-                                
+
                                 style="
-                                <?php 
-                                    if($logo -> font_weight == 'Semibold'){
-                                        echo ' background-color: #4255ff; color: white;';
-                                    }
+                                <?php
+                                if ($logo->font_weight == 'Semibold') {
+                                    echo ' background-color: #4255ff; color: white;';
+                                }
                                 ?>
                                 "
                                 class="px-4 py-2 rounded-lg border transition-colors duration-200 text-sm font-medium bg-[#e4e4e4] text-foreground border-border hover:border-primary "
                                 value="Semibold">
                             <input type="button" id="fw_btn"
-                                
-                                style="<?php 
-                                    if($logo -> font_weight == 'Bold'){
-                                        echo ' background-color: #4255ff; color: white;';
-                                    }
-                                ?>"
+
+                                style="<?php
+                                        if ($logo->font_weight == 'Bold') {
+                                            echo ' background-color: #4255ff; color: white;';
+                                        }
+                                        ?>"
                                 class="px-4 py-2 rounded-lg border transition-colors duration-200 text-sm font-medium bg-muted text-foreground border-border hover:border-primary"
                                 value="Bold">
 
@@ -103,12 +103,10 @@ $logo = $query->getResult()[0];
                     <div>
                         <label class="block text-sm font-medium text-foreground mb-2">Primary Color</label>
                         <div class="flex items-center gap-4">
-                            <input type="color" id="lg_color" name="color" 
-                                class="w-16 h-12 rounded-lg cursor-pointer border border-border" value="<?= $logo -> color ?>" />
+                            <input type="color" id="lg_color" class="w-16 h-12 rounded-lg cursor-pointer border border-border" value="<?= $logo->color ?>" />
                             <div class="flex-1">
-                                <input type="text" id="lg_color_code"
-                                    class="w-full px-4 py-2 bg-input border border-border rounded-lg text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-mono"
-                                    value="<?= $logo -> color ?>" />
+                                <input type="text" id="lg_color_code" name="color" class="w-full px-4 py-2 bg-input border border-border rounded-lg text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-mono"
+                                    value="<?= $logo->color ?>" />
                             </div>
                         </div>
                     </div>
@@ -128,27 +126,35 @@ $logo = $query->getResult()[0];
                     <div class="text-center">
                         <a class="flex items-center gap-2 font-bold text-xl text-white" href="/">
                             <span id="shortNameBgPreview"
-                            
-                                class="h-8 w-8 rounded-lg bg-[<?= $logo -> color ?>] text-black flex items-center justify-center font-bold"><?= $logo -> short_name ?></span>
-                            <h1 style="font-family: <?= $logo -> font_style ?>" id="longNamePreview"><?= $logo -> long_name ?></h1>
+
+                                class="h-8 w-8 rounded-lg bg-[<?= $logo->color ?>] text-black flex items-center justify-center font-bold"><?= $logo->short_name ?></span>
+                            <h1
+                                style="font-family: <?= $logo->font_style ?>;
+           font-weight: <?=
+                        ($logo->font_weight == "Regular") ? "400" : (($logo->font_weight == "Medium") ? "600" : (($logo->font_weight == "Semibold") ? "700" : (($logo->font_weight == "Bold") ? "900" : "400")))
+                        ?>;"
+                                id="longNamePreview">
+                                <?= $logo->long_name ?>
+                            </h1>
+
                         </a>
                     </div>
                 </div>
                 <div class="mt-6 space-y-3 text-sm">
                     <div class="flex justify-between">
                         <span class="text-muted-foreground">Selected Font:</span>
-                        <span id="selectedFont" class="font-semibold text-foreground"><?= $logo -> font_style ?></span>
+                        <span id="selectedFont" class="font-semibold text-foreground"><?= $logo->font_style ?></span>
                     </div>
                     <div class="flex justify-between">
                         <span class="text-muted-foreground">Font Weight:</span>
-                        <span id="fontWeight" class="font-semibold text-foreground"><?= $logo -> font_weight ?></span>
+                        <span id="fontWeight" class="font-semibold text-foreground"><?= $logo->font_weight ?></span>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="text-muted-foreground">Primary Color:</span>
                         <div class="flex items-center gap-2">
                             <div id="shortNameBgPreviewBttom" class="w-4 h-4 rounded border border-border"></div>
                             <span id="lg_color_code_preview"
-                                class="font-semibold text-foreground font-mono"><?= $logo -> color ?></span>
+                                class="font-semibold text-foreground font-mono"><?= $logo->color ?></span>
                         </div>
                     </div>
                 </div>

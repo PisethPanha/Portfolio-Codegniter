@@ -10,7 +10,7 @@ class LogoModel extends Model
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
-    protected $allowedFields    = ['short_name', 'long_name', 'font_style', 'font_weight'];
+    protected $allowedFields    = ['short_name', 'long_name', 'font_style', 'font_weight', "color"];
 
    
 }

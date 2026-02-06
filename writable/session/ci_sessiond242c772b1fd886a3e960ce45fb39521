@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1770189180;error|s:213:"cURL error 60: SSL certificate OpenSSL verify result: unable to get local issuer certificate (20) (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api.cloudinary.com/v1_1/dbylpzlji/image/upload";__ci_vars|a:1:{s:5:"error";s:3:"new";}
